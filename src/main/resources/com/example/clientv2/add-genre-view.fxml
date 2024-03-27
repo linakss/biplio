@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="390.0" prefWidth="267.0" style="-fx-background-color: #EFD9CE; -fx-background-radius: 5;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.clientv2.controller.AddGenreController">
+   <children>
+      <Button fx:id="btnAddorChangeGenre" layoutX="26.0" layoutY="348.0" mnemonicParsing="false" onAction="#addGenreAction" style="-fx-background-color: #25283D; -fx-background-radius: 30;" text="Добавить" textFill="#8f3985" />
+      <TextField fx:id="textGenreTitle" layoutX="62.0" layoutY="292.0" style="-fx-background-color: #A675A1; -fx-background-radius: 30;" />
+      <Label layoutX="109.0" layoutY="267.0" text="Название:" textFill="#8f3985" />
+      <ListView fx:id="dataGenreList" layoutX="28.0" layoutY="46.0" prefHeight="200.0" prefWidth="211.0" style="-fx-background-color: #A675A1; -fx-background-radius: 30;" />
+      <Label layoutX="58.0" layoutY="14.0" text="Жанры, имеющиеся в базе:" textFill="#8f3985" />
+      <Button fx:id="btnCancelGenre" layoutX="107.0" layoutY="348.0" mnemonicParsing="false" onAction="#cancelGenreAction" style="-fx-background-color: #25283D; -fx-background-radius: 30;" text="Отмена" textFill="#8f3985" />
+      <Button layoutX="182.0" layoutY="348.0" mnemonicParsing="false" onAction="#deleteGenreAction" style="-fx-background-color: #25283D; -fx-background-radius: 30;" text="Удалить" textFill="#8f3985" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="372.0" prefWidth="284.0" style="-fx-background-color: #A675A1; -fx-background-radius: 5;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.clientv2.controller.AddCityController">
+   <children>
+      <TextField fx:id="textTitleCity" layoutX="117.0" layoutY="273.0" prefHeight="25.0" prefWidth="125.0" style="-fx-background-color: #EFD9CE; -fx-background-radius: 30;" />
+      <Label layoutX="42.0" layoutY="277.0" text="Название" textFill="#25283d" />
+      <HBox layoutX="28.0" layoutY="327.0" prefHeight="25.0" prefWidth="228.0">
+         <children>
+            <Button fx:id="btnAddorChangeCity" mnemonicParsing="false" onAction="#addCityAction" style="-fx-background-radius: 30; -fx-background-color: #25283D;" text="Добавить" textFill="#efd9ce">
+               <opaqueInsets>
+                  <Insets left="5.0" />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnCancelCity" mnemonicParsing="false" onAction="#cancelCityAction" style="-fx-background-radius: 30; -fx-background-color: #25283D;" text="Отмена" textFill="#efd9ce">
+               <opaqueInsets>
+                  <Insets left="5.0" />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#deleteCityAction" style="-fx-background-radius: 30; -fx-background-color: #25283D;" text="Удалить" textFill="#efd9ce">
+               <opaqueInsets>
+                  <Insets left="5.0" />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <ListView fx:id="dataCityList" layoutX="42.0" layoutY="45.0" onMouseClicked="#onMouseClickDataList" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EFD9CE; -fx-background-radius: 25;" />
+      <Label layoutX="121.0" layoutY="14.0" text="Города:" textFill="#25283d" />
+   </children>
+</AnchorPane>
